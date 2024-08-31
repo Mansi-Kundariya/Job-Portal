@@ -11,8 +11,11 @@
   "author": "Mansi Kundariya",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^22.5.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "mongoose": "^8.6.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
   }
 }
