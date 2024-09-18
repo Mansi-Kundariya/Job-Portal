@@ -4,8 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+// Define the type for the root element
+const rootElement = document.getElementById("root");
+
+// Make sure the rootElement is not null by adding a type check
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement as HTMLElement);
+  root.render(<App />);
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
