@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import db_connection from "./db.js";
+import db_connection from "./db.ts";
 
 dotenv.config();
 const app = express();
@@ -9,6 +9,6 @@ const app = express();
 db_connection();
 
 app.listen(process.env.PORT, () => {
-    console.log('Server started on port');
-    console.log(':'+process.env.PORT);
+  console.log("Server started on port");
+  console.log(":" + process.env.PORT);
 });
